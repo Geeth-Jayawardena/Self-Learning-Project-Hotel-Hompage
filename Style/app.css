@@ -26,6 +26,30 @@ ul li a {
     text-decoration: none;
     color: #003566;
     padding: 5px 20px;
-    border: 2px solid #003566;
+    border: 2px solid transparent; /* #003566 */
     font-weight: 550;
+    transition: 0.5s ease;
+}
+
+ul li a:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+ul li.active a {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.logo {
+    margin-top: 25px;
+    margin-left: 20px;
+    float: left;
+    width: 150px;
+    height: auto;
+}
+
+.main {
+    max-width: 1800px;
+    margin: auto;
 }
