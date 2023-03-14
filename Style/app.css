@@ -5,7 +5,7 @@
 }
 
 header {
-    background-image: url(../Homepage.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Homepage.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -26,7 +26,8 @@ ul li a {
     text-decoration: none;
     color: #003566;
     padding: 5px 20px;
-    border: 2px solid transparent; /* #003566 */
+    border: 2px solid transparent;
+    /* #003566 */
     font-weight: 550;
     transition: 0.5s ease;
 }
@@ -52,4 +53,36 @@ ul li.active a {
 .main {
     max-width: 1800px;
     margin: auto;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1 {
+    color: #ffffff;
+    font-size: 130px;
+}
+
+.button {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    border: 1px solid #ffffff;
+    padding: 10px 30px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.btn:hover {
+    background-color: #6c757d;
+    color: #ffffff;
 }
